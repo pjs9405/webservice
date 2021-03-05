@@ -12,7 +12,10 @@ cache:
 
 script: "./gradlew clean build"
 
+before_install:
+  - chmod +x gradlew
+
 notifications:
   email:
     recipients:
-      - 'nill94@naver.com'
+      - nill94@naver.com
